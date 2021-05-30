@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Star</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -----icons css----- -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <div class="scene">
+        <div class="moon"></div>
+        <img src="./forest.png" class="forest">
+        <!-- <img src="./cloud1.png" class="cloud1"> -->
+        <!-- <img src="./cloud2.png" class="cloud2"> -->
+        <!-- <img src="./cloud3.png" class="cloud3"> -->
+        <!-- <img src="./cloud1.png" class="cloud4"> -->
+        <!-- <img src="./cloud2.png" class="cloud5"> -->
+        <!-- <img src="./cloud3.png" class="cloud6"> -->
+    </div>
+
+    <main>
+        <section class="box1">
+
+            <!-- -----DASHBOARD----- -->
+
+            <div class="dashboard">
+                <img class="logo" src="img/logo.png" alt="">
+                <div class="textd1">
+                    <h1>RITIK PARTE</h1>
+                </div>
+
+                <!-- -----D-NAVBAR----- -->
+
+                <div class="navbar">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="skills.html" class="nav__link">
+                                <i class="uil uil-file-download nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="services.html" class="nav__link">
+                                <i class="uil uil-suitcase nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- -----D-SOCIAL----- -->
+
+                <div class="social">
+                    <div class="link">
+                        <a href="https://www.linkedin.com/in/ritik-parte-a9303320a/" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                    <div class="ins">
+                        <a href="https://instagram.com/ritikparte1" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="git">
+                        <a href="https://github.com/ritikparte01" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----MAIN----- -->
+
+            <div class="maincontaint">
+
+                <!-- -----FIRST SECTION----- -->
+
+                <div class="firstcontaint">
+                    <div class="txt1">
+                        <h1>Hi. I'am RITIK<br> <span>Frontend Developer</span></h1>
+                        <p>Welcome, I am a Professional Web Designer Dedicated to Professional services.</p>
+                    </div>
+
+                    <!-- -----PROFILE----- -->
+
+                    <div class="img-aside">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+
+                                <image class="home__blob-img" x='12' y='18' xlink:href="img/ritik1.png" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- -----SECONDBOX----- -->
+
+                <div class="secondcontainer">
+                    <h4>I am a Professional Web Designer Dedicated to Professional services. Quality Web Design, and
+                        Trustworthy Result. We Create Highly Functional User Interfaces with a Perfect
+                        Mixture of Simplicity, and Innovation for each of Our Clients.</h4>
+                    <button class="btn1"><a href="pdf/RESUME.pdf">Download CV <i
+                                class="uil uil-download-alt button__icon"></i></a></button>
+                </div>
+            </div>
+
+
+            <!-- -----JAVASCRIPT FOR BACKGROUND -->
+            <script type="text/javascript">
+                function stars() {
+                    let count = 500;
+                    let scene4 = document.querySelector('.scene');
+                    let i = 0;
+                    while (i < count) {
+                        let star = document.createElement("i");
+                        let x = Math.floor(Math.random() * window.innerWidth);
+                        let y = Math.floor(Math.random() * window.innerHeight);
+                        let duration = Math.random() * 10;
+                        let size = Math.random() * 2;
+
+                        star.style.left = x + 'px';
+                        star.style.top = y + 'px';
+                        star.style.width = 1 + size + 'px';
+                        star.style.height = 1 + size + 'px';
+
+                        star.style.animationDuration = 5 + duration + 's';
+                        star.style.animationDeley = 5 + duration + 's';
+
+                        scene4.appendChild(star);
+                        i++
+
+                    }
+                }
+                stars();
+            </script>
+
+            <!-- -----JAVASCRIPT FOR GLARE AND HOVER----- -->
+
+            <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script>
+                VanillaTilt.init(document.querySelectorAll(".box1"), {
+                    max: 3,
+                    speed: 200,
+                    glare: true,
+                    "max-glare": .4,
+                });
+            </script>
+
+
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function stars() {
+            let count = 500;
+            let scene = document.querySelector('.scene');
+            let i = 0;
+            while (i < count) {
+                let star = document.createElement("i");
+                let x = Math.floor(Math.random() * window.innerWidth);
+                let y = Math.floor(Math.random() * window.innerHeight);
+                let duration = Math.random() * 10;
+                let size = Math.random() * 2;
+
+                star.style.left = x + 'px';
+                star.style.top = y + 'px';
+                star.style.width = 1 + size + 'px';
+                star.style.height = 1 + size + 'px';
+
+                star.style.animationDuration = 5 + duration + 's';
+                star.style.animationDeley = 5 + duration + 's';
+
+                scene.appendChild(star);
+                i++
+
+            }
+        }
+        stars();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Morphism Project</title>
+
+    <!-- ======Main Css====== -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -----icons css----- -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="scene4">
+        <div class="sun4"></div>
+        <img src="./forest.png" class="forest">
+        <!-- <img src="./cloud1.png" class="cloud1"> -->
+        <!-- <img src="./cloud2.png" class="cloud2"> -->
+        <!-- <img src="./cloud3.png" class="cloud3"> -->
+        <!-- <img src="./cloud1.png" class="cloud4"> -->
+        <!-- <img src="./cloud2.png" class="cloud5"> -->
+        <!-- <img src="./cloud3.png" class="cloud6"> -->
+    </div>
+    <main>
+        <section class="box1">
+
+            <!-- -----DASHBOARD----- -->
+
+            <div class="dashboard">
+                <img src="img/logo.png" alt="">
+                <div class="textd1">
+                    <h1>RITIK PARTE</h1>
+                </div>
+
+                <!-- -----D-NAVBAR----- -->
+
+                <div class="navbar">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="skills.html" class="nav__link">
+                                <i class="uil uil-file-download nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="services.html" class="nav__link">
+                                <i class="uil uil-suitcase nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- -----D-SOCIAL----- -->
+
+                <div class="social">
+                    <div class="link">
+                        <a href="https://www.linkedin.com/in/ritik-parte-a9303320a/" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                    <div class="ins">
+                        <a href="https://instagram.com/ritikparte1" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="git">
+                        <a href="https://github.com/ritikparte01" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- -----MAIN CONTENT----- -->
+            <div class="portfolio-section">
+                <h2 class="section__title">Portfolio</h2>
+                <span>My Portfolio's</span>
+                <div class="skill__container container grid">
+                    <div class="portfolios">
+                        <div class="porfolio1">
+                            <img src="img/p1.JPG" alt="">
+                            <div class="textp">
+                                <h1><a href="https://ritikparte01.github.io/RITIKPORTFOLIO/">Responsive Portfolio
+                                        Website</a></h1>
+                                <p>Responsive Website For Portfolio With Dark And Light Mode Switch.</p>
+                            </div>
+                        </div>
+
+                        <div class="porfolio1">
+                            <img src="img/p2.JPG" alt="">
+                            <div class="textp">
+                                <h1><a href="https://www.myportfolioritik2.freecluster.eu/">WordPress Website</h1>
+                                </a>
+                                <p>WordPress Website Based On <br><span><a href="https://wenthemes.com/">Signify
+                                            Photography By Wen Themes
+                                        </a>
+                                    </span></p>
+                            </div>
+                        </div>
+
+
+                        <div class="porfolio1">
+                            <img src="img/p3.JPG" alt="">
+                            <div class="textp">
+                                <h1><a href="http://myportfolioritik.freecluster.eu/">Static WordPress Website</h1></a>
+                                <p>Static WordPress Website Fully Based On <br><span> <a
+                                            href="https://voilathemes.com/wordpress-themes/web-development/"> Web
+                                            Development WordPress
+                                            Theme</a></span></p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+                    <!-- -----JAVASCRIPT FOR BACKGROUND -->
+                    <script type="text/javascript">
+                        function stars() {
+                            let count = 500;
+                            let scene4 = document.querySelector('.scene4');
+                            let i = 0;
+                            while (i < count) {
+                                let star = document.createElement("i");
+                                let x = Math.floor(Math.random() * window.innerWidth);
+                                let y = Math.floor(Math.random() * window.innerHeight);
+                                let duration = Math.random() * 10;
+                                let size = Math.random() * 2;
+
+                                star.style.left = x + 'px';
+                                star.style.top = y + 'px';
+                                star.style.width = 1 + size + 'px';
+                                star.style.height = 1 + size + 'px';
+
+                                star.style.animationDuration = 5 + duration + 's';
+                                star.style.animationDeley = 5 + duration + 's';
+
+                                scene4.appendChild(star);
+                                i++
+
+                            }
+                        }
+                        stars();
+                    </script>
+
+
+                    <!-- -----JAVASCRIPT FOR GLARE AND HOVER----- -->
+
+                    <script type="text/javascript" src="vanilla-tilt.js"></script>
+                    <script>
+                        VanillaTilt.init(document.querySelectorAll(".box1"), {
+                            max: 3,
+                            speed: 200,
+                            glare: true,
+                            "max-glare": .4,
+                        });
+                    </script>
+
+                    <script type="text/javascript" src="vanilla-tilt.js"></script>
+                    <script>
+                        VanillaTilt.init(document.querySelectorAll(".porfolio1 img"), {
+                            max: 15,
+                            speed: 200,
+                            glare: true,
+                            "max-glare": .4,
+                        });
+                    </script>
+        </section>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+
+</html>

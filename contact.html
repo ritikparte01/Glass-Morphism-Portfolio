@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <!-- ======Main Css====== -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -----icons css----- -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="scene">
+        <div class="moon"></div>
+        <img src="./forest.png" class="forest">
+        <!-- <img src="./cloud1.png" class="cloud1"> -->
+        <!-- <img src="./cloud2.png" class="cloud2"> -->
+        <!-- <img src="./cloud3.png" class="cloud3"> -->
+        <!-- <img src="./cloud1.png" class="cloud4"> -->
+        <!-- <img src="./cloud2.png" class="cloud5"> -->
+        <!-- <img src="./cloud3.png" class="cloud6"> -->
+    </div>
+    <main>
+        <section class="box1">
+
+            <!-- -----DASHBOARD----- -->
+
+            <div class="dashboard">
+                <img src="img/logo.png" alt="">
+                <div class="textd1">
+                    <h1>RITIK PARTE</h1>
+                </div>
+
+                <!-- -----D-NAVBAR----- -->
+
+                <div class="navbar">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="skills.html" class="nav__link">
+                                <i class="uil uil-file-download nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="services.html" class="nav__link">
+                                <i class="uil uil-suitcase nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- -----D-SOCIAL----- -->
+
+                <div class="social">
+                    <div class="link">
+                        <a href="https://www.linkedin.com/in/ritik-parte-a9303320a/" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                    <div class="ins">
+                        <a href="https://instagram.com/ritikparte1" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="git">
+                        <a href="https://github.com/ritikparte01" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-------MAIN CONTENT----- -->
+            <div class="contact-section">
+                <h2 class="section__title">Contact Me</h2>
+                <span>Get in Touch</span>
+                <div class="contact__container container grid">
+
+                    <!-- -----Contact Detail -->
+                    <div class="contactd">
+                        <div class="phone">
+                            <h1>Phone &#58; +919307996477</h1>
+
+                        </div>
+                        <div class="email">
+                            <h1>E-mail &#58; ritikparte01@gmail.com</h1>
+                        </div>
+                        <div class="add">
+                            <h1>Address &#58; Samarth Ramdas Nagar Vasai East</h1>
+                        </div>
+                    </div>
+                    <div class="formh1">
+                        <h1>Enter Your Details</h1>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="textarea" placeholder="Message">
+                        <input type="email" placeholder="Email">
+                        <input type="number" placeholder="Phone">
+                        <button class="cbtn">SEND</button>
+                    </form>
+                </div>
+
+
+
+                <!-- -----JAVASCRIPT FOR BACKGROUND -->
+                <script type="text/javascript">
+                    function stars() {
+                        let count = 500;
+                        let scene = document.querySelector('.scene');
+                        let i = 0;
+                        while (i < count) {
+                            let star = document.createElement("i");
+                            let x = Math.floor(Math.random() * window.innerWidth);
+                            let y = Math.floor(Math.random() * window.innerHeight);
+                            let duration = Math.random() * 10;
+                            let size = Math.random() * 2;
+
+                            star.style.left = x + 'px';
+                            star.style.top = y + 'px';
+                            star.style.width = 1 + size + 'px';
+                            star.style.height = 1 + size + 'px';
+
+                            star.style.animationDuration = 5 + duration + 's';
+                            star.style.animationDeley = 5 + duration + 's';
+
+                            scene.appendChild(star);
+                            i++
+
+                        }
+                    }
+                    stars();
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+
+                <script type="text/javascript" src="vanilla-tilt.js"></script>
+                <script>
+                    VanillaTilt.init(document.querySelectorAll(".box1"), {
+                        max: 3,
+                        speed: 200,
+                        glare: true,
+                        "max-glare": .4,
+                    });
+                </script>
+        </section>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+
+</html>

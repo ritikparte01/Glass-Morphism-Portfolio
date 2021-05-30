@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <!-- ======Main Css====== -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -----icons css----- -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="scene3">
+        <div class="sun3"></div>
+        <img src="./forest.png" class="forest">
+        <!-- <img src="./cloud1.png" class="cloud1"> -->
+        <!-- <img src="./cloud2.png" class="cloud2"> -->
+        <!-- <img src="./cloud3.png" class="cloud3"> -->
+        <!-- <img src="./cloud1.png" class="cloud4"> -->
+        <!-- <img src="./cloud2.png" class="cloud5"> -->
+        <!-- <img src="./cloud3.png" class="cloud6"> -->
+    </div>
+    <main>
+        <section class="box1">
+
+            <!-- -----DASHBOARD----- -->
+
+            <div class="dashboard">
+                <img src="img/logo.png" alt="">
+                <div class="textd1">
+                    <h1>RITIK PARTE</h1>
+                </div>
+
+                <!-- -----D-NAVBAR----- -->
+
+                <div class="navbar">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="skills.html" class="nav__link">
+                                <i class="uil uil-file-download nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="services.html" class="nav__link">
+                                <i class="uil uil-suitcase nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- -----D-SOCIAL----- -->
+
+                <div class="social">
+                    <div class="link">
+                        <a href="https://www.linkedin.com/in/ritik-parte-a9303320a/" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                    <div class="ins">
+                        <a href="https://instagram.com/ritikparte1" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="git">
+                        <a href="https://github.com/ritikparte01" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----MAIN CONTENT----- -->
+
+            <div class="services-section">
+                <h2 class="service__title">Services</h2>
+                <span>What Can i Do for You</span>
+                <div class="skill__container container grid">
+
+                    <!-- MAIN1 -->
+                    <div class="mains1">
+                        <div class="mainservice">
+                            <h1>Website Design Services</h1>
+                            <button id="read_more" class="read_more">Show More</button>
+                            <p id="extra_content" class="extra_content">A website is your online identity, be it an
+                                eCommerce store, a
+                                corporate or a small
+                                business
+                                website. Care should be taken to develop an attractive presence that entices visitors
+                                and
+                                urges them to convert. With the right strategies and technologies, our website design
+                                and
+                                development services help your business maximize its potential with appealing and
+                                interactive websites.</p>
+                        </div>
+
+                        <div class="mainservice">
+                            <h1> Digital Marketing Services</h1>
+                            <button id="read_more" class="read_more">Show More</button>
+                            <p id="extra_content" class="extra_content">Digital Marketing is the need of the hour, be
+                                it a small business or
+                                a large
+                                enterprise.
+                                Whether you need to increase lead generation, optimize conversions, or build
+                                engagement,
+                                our digital marketing services can deliver effectively for all your needs. Give your
+                                business the right boost with our 360-degree digital marketing solutions.</p>
+                        </div>
+
+                        <div class="mainservice">
+                            <h1>ECommerce Website Design</h1>
+                            <button id="read_more" class="read_more">Show More</button>
+                            <p id="extra_content" class="extra_content">We provide visually appealing, robust, secure
+                                and easy to navigate
+                                eCommerce
+                                websites
+                                to help increase online sales. Utilizing advanced technologies, we deliver
+                                precise
+                                and effective online store and marketplace solutions for your needs. Avail our
+                                eCommerce Website Design services to enhance business growth and reduce
+                                operational
+                                costs.</p>
+                        </div>
+                    </div>
+
+                    <!-- -----JAVASCRIPT FOR BACKGROUND -->
+                    <script type="text/javascript">
+                        function stars() {
+                            let count = 500;
+                            let scene3 = document.querySelector('.scene3');
+                            let i = 0;
+                            while (i < count) {
+                                let star = document.createElement("i");
+                                let x = Math.floor(Math.random() * window.innerWidth);
+                                let y = Math.floor(Math.random() * window.innerHeight);
+                                let duration = Math.random() * 10;
+                                let size = Math.random() * 2;
+
+                                star.style.left = x + 'px';
+                                star.style.top = y + 'px';
+                                star.style.width = 1 + size + 'px';
+                                star.style.height = 1 + size + 'px';
+
+                                star.style.animationDuration = 5 + duration + 's';
+                                star.style.animationDeley = 5 + duration + 's';
+
+                                scene3.appendChild(star);
+                                i++
+
+                            }
+                        }
+                        stars();
+                    </script>
+
+
+                    <script type="text/javascript" src="vanilla-tilt.js"></script>
+                    <script>
+                        VanillaTilt.init(document.querySelectorAll(".box1"), {
+                            max: 3,
+                            speed: 200,
+                            glare: true,
+                            "max-glare": .4,
+                        });
+                    </script>
+
+                    <script type="text/javascript" src="vanilla-tilt.js"></script>
+                    <script>
+                        VanillaTilt.init(document.querySelectorAll(".mainservice"), {
+                            max: 10,
+                            speed: 200,
+                            glare: true,
+                            "max-glare": .4,
+                        });
+                    </script>
+                    <!-- script for read more -->
+                    <script>
+                        document.querySelectorAll("button.read_more").forEach(function (button1) {
+                            button.addEventListener('click', changeClass);
+                        });
+
+                        function changeClass() {
+                            var content = document.getElementById("extra_content");
+                            var buttons = document.querySelectorAll("button.read_more");
+
+                            content.classList.toggle("show");
+
+                            var buttonText = content.classList.contains("show") ? "Show Less" : "Show More";
+
+                            buttons.forEach(function (button1) {
+                                button.innerHTML = buttonText;
+                            });
+                        }
+
+
+
+
+
+                    </script>
+        </section>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+
+</html>
