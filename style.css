@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* =====SCENE 1===== */
 .scene{
     position: absolute;
     width: 100%;
@@ -122,9 +121,6 @@
     }
 }
 
-/* =====SCENE 1 END===== */
-
-/* =====SCENE 2===== */
 .scene2{
     position: absolute;
     width: 100%;
@@ -246,9 +242,6 @@
 
 
 
-/* =====SCENE 2 END===== */
-
-/* =====SCENE 3===== */
 .scene3{
     position: absolute;
     width: 100%;
@@ -367,13 +360,6 @@
         transform: translateX(400%) scale(1.5);
     }
 }
-
-
-
-/* =====SCENE 3 END===== */
-
-/* =====SCENE 4===== */
-
 
 .scene4{
     position: absolute;
@@ -512,7 +498,6 @@ main{
  width: 100vw;
  
 }
-/* =====MAIN CONTAINBER===== */
 .box1{
     /* background: white; */
     max-height: 75vh;
@@ -531,8 +516,6 @@ main{
     border-radius: 18px;
     z-index: 1000;
 }
-
-/* =====DASHBOARD===== */
 
 .dashboard{
     display: flex;
@@ -558,10 +541,6 @@ main{
     font-family: Overlock SC;
     letter-spacing: 2px;
 }
-
-
-
-/* =====NAVBAR===== */
 
 .dashboard .navbar{
 }
@@ -590,8 +569,6 @@ main{
     color: gold;
 }
 
-/* =====SOCIAL ICON===== */
-
 .social{
     margin-top: 50px;
     display: flex;
@@ -618,9 +595,6 @@ main{
     color: blue;
     transition: .4s;
 }
-
-/* =====MAIN CONTENT===== */
-
 .maincontaint{
     height: auto;
     width:850px;
@@ -629,8 +603,6 @@ main{
     display: grid;
     grid-template-columns: 550px 300px;
 }
-
-/* =====FIRST CONTENT===== */
 
 .txt1{
     display: flex;
@@ -652,9 +624,6 @@ main{
     color: rgba(255, 255, 255, 0.568);
     margin-top: 30px;
 }
-
-/* =====PROFILE===== */
-
 .img-aside{
 }
 .img-aside img{
@@ -681,10 +650,6 @@ hr{
     opacity: 100%;
     cursor: pointer;
 }
-
-
-/* SECOND CONTENT */
-
 .secondcontainer{
     width: 550px;
     margin-left: 140px;
@@ -727,15 +692,6 @@ hr{
     color: rgba(34, 34, 34, 0.582);
     font-size: 18px;
 }
-
-
-
-
-
-/* SKILLS SECTION CSS */
-
-/* SKILLS BAR */
-
 .skillssection{
     width: 850px;
     align-items: center;
@@ -834,10 +790,6 @@ hr{
 .active-link{
     color: gold;
 }
-
-
-/* ======SERVICE SECTION====== */
-
 .services-section{
     width: 850px;
     display: flex;
@@ -871,10 +823,6 @@ hr{
     box-shadow: 4px 4px 1px rgba(214, 214, 214, 0.493);
     cursor: pointer;
 }
-
-
-/* =====PORTFOLIO SECTION===== */
-
 .portfolio-section{
     width: 850px;
     display: flex;
@@ -929,10 +877,6 @@ hr{
     color: lightpink;
     transition: .5s;
 }
-
-
-/* =====CONTACT SECTION */
-
 .contact-section{
     width: 850px;
     display: flex;
@@ -1084,17 +1028,6 @@ input[type='number']{
     opacity: 1;
     padding-left: 20px;
   }
-
-
-
-
-
-
-
-
-  
-  /* ========= MEDIA QUERY FOR MOBILE ============ */
-
   @media only screen and (max-width: 450px) {
       
     .box1{
@@ -1150,9 +1083,6 @@ input[type='number']{
     display: grid;
     grid-template-columns: 70px 40px;
 }
-
-/* =====FIRST CONTENT===== */
-
 .txt1{
     display: flex;
     align-items: left;
@@ -1182,11 +1112,6 @@ hr{
     width: 100px;
     margin-top: 10px;
 }
-
-
-
-/* =====PROFILE===== */
-
 .home__blob{
     width: 100px;
     fill:rgba(255, 255,255,0.7);
@@ -1252,11 +1177,6 @@ hr{
     color: rgba(34, 34, 34, 0.582);
     font-size: 18px;
 }
-
-
-
-/* ==========SKILLS MEDIA=========== */
-
 .skillssection{
     width: 850px;
     align-items: center;
@@ -1376,9 +1296,6 @@ hr{
     .social .git{
         margin-top: 10px;
     }
-
-    /* =========SERVICE SECTION MEDIA========== */
-
     .services-section{
         width: 200px;
         display: flex;
@@ -1425,10 +1342,6 @@ hr{
         font-size: 11px;
         text-align: center;
     }
-
-/* READ MORE */
-
-
     .extra_content {
         display: none;
       }
@@ -1453,9 +1366,6 @@ hr{
       }
     
  */
-
-/* ========================PORTFOLIO SECTION MEDIA============= */
-
 .portfolio-section{
     width: 200px;
     display: flex;
@@ -1507,11 +1417,6 @@ hr{
 .textp p a:hover{
     color: lightpink;
 }
-
-
-
-/* =============CONTACT SECTION MEDIA========= */
-
 .contact-section{
     width: 200px;
     display: flex;
@@ -1680,32 +1585,8 @@ input[type='number']{
     padding-left: 20px;
     font-size: 10px;
   }
-
-
-
-
-
-
-
-
-
-
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========READ MORE=========== */
 .read_more  {
     display: none;
   }
@@ -1713,19 +1594,3 @@ input[type='number']{
   .show {
      display: block;
   }
-/* 
-  .read_more2  {
-    display: none;
-  }
-  
-  .show2 {
-     display: block;
-  }
-
-  .read_more3  {
-    display: none;
-  }
-  
-  .show3 {
-     display: block;
-  } */
